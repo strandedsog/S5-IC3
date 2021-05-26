@@ -1,0 +1,244 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Memory Game</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker" >
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <center>
+        <table id="tab">
+          <tr>
+            <input type="hidden" id="turnID" value="Hurakan">
+            <th><center>HURAKAN</th>
+            <th><center>SINALOA</th>
+          </tr>
+          <tr>
+            <td id="id1"><center><span id="number" value="0" style="display: inline; font-size: 30px !important;" disabled>0</span></td>
+            <td id="id2"><center><span id="number2" value="0" style="display: inline; font-size: 30px !important;" disabled>0</span></td>
+          </tr>
+        </table>        
+    </center>
+    <div class="container">
+        <ul class="deck" id="card-deck">
+            <li class="card" type="diamond">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="card" type="diamond">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="card" type="suitcase">
+                <i class="fa fa-suitcase"></i>
+            </li>      
+            <li class="card" type="suitcase">
+                <i class="fa fa-suitcase"></i>
+            </li> 
+            <li class="card" type="star">
+                <i class="fa fa-star"></i>
+            </li>      
+            <li class="card" type="star">
+                <i class="fa fa-star"></i>
+            </li>  
+            <li class="card" type="sticky-note">
+                <i class="fa fa-sticky-note"></i>
+            </li>      
+            <li class="card" type="sticky-note">
+                <i class="fa fa-sticky-note"></i>
+            </li>    
+            <li class="card" type="book">
+                <i class="fa fa-book"></i>
+            </li>      
+            <li class="card" type="book">
+                <i class="fa fa-book"></i>
+            </li>
+            <li class="card" type="envelope-o">
+                <i class="fa fa-envelope-o"></i>
+            </li>      
+            <li class="card" type="envelope-o">
+                <i class="fa fa-envelope-o"></i>
+            </li>  
+            <li class="card" type="bell-o">
+                <i class="fa fa-bell-o"></i>
+            </li>      
+            <li class="card" type="bell-o">
+                <i class="fa fa-bell-o"></i>
+            </li>
+            <li class="card" type="anchor">
+                <i class="fa fa-anchor"></i>
+            </li>      
+            <li class="card" type="anchor">
+                <i class="fa fa-anchor"></i>
+            </li>  
+            <li class="card" type="bicycle">
+                <i class="fa fa-bicycle"></i>
+            </li>      
+            <li class="card" type="bicycle">
+                <i class="fa fa-bicycle"></i>
+            </li>  
+            <li class="card" type="bomb">
+                <i class="fa fa-bomb"></i>
+            </li>      
+            <li class="card" type="bomb">
+                <i class="fa fa-bomb"></i>
+            </li>  
+            <li class="card" type="cab">
+                <i class="fa fa-cab"></i>
+            </li>      
+            <li class="card" type="cab">
+                <i class="fa fa-cab"></i>
+            </li>  
+            <li class="card" type="eye">
+                <i class="fa fa-eye"></i>
+            </li>      
+            <li class="card" type="eye">
+                <i class="fa fa-eye"></i>
+            </li>  
+            <li class="card" type="leaf">
+                <i class="fa fa-leaf"></i>
+            </li>      
+            <li class="card" type="leaf">
+                <i class="fa fa-leaf"></i>
+            </li>  
+            <li class="card" type="cube">
+                <i class="fa fa-cube"></i>
+            </li>      
+            <li class="card" type="cube">
+                <i class="fa fa-cube"></i>
+            </li>  
+            <li class="card" type="key">
+                <i class="fa fa-key"></i>
+            </li>      
+            <li class="card" type="key">
+                <i class="fa fa-key"></i>
+            </li>  
+            <li class="card" type="bolt">
+                <i class="fa fa-bolt"></i>
+            </li>      
+            <li class="card" type="bolt">
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card" type="tree">
+                <i class="fa fa-tree"></i>
+            </li>      
+            <li class="card" type="tree">
+                <i class="fa fa-tree"></i>
+            </li>  
+            <li class="card" type="headphones">
+                <i class="fa fa-headphones"></i>
+            </li>      
+            <li class="card" type="headphones">
+                <i class="fa fa-headphones"></i>
+            </li>
+            <li class="card" type="paper-plane-o">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>      
+            <li class="card" type="paper-plane-o">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>  
+            <li class="card" type="heart-o">
+                <i class="fa fa-heart-o"></i>
+            </li>      
+            <li class="card" type="heart-o">
+                <i class="fa fa-heart-o"></i>
+            </li>
+            <li class="card" type="flag">
+                <i class="fa fa-flag"></i>
+            </li>      
+            <li class="card" type="flag">
+                <i class="fa fa-flag"></i>
+            </li> 
+            <li class="card" type="pencil">
+                <i class="fa fa-pencil"></i>
+            </li>      
+            <li class="card" type="pencil">
+                <i class="fa fa-pencil"></i>
+            </li>  
+            <li class="card" type="shield">
+                <i class="fa fa-shield"></i>
+            </li>      
+            <li class="card" type="shield">
+                <i class="fa fa-shield"></i>
+            </li>  
+            <li class="card" type="rocket">
+                <i class="fa fa-rocket"></i>
+            </li>      
+            <li class="card" type="rocket">
+                <i class="fa fa-rocket"></i>
+            </li>  
+            <li class="card" type="clock-o">
+                <i class="fa fa-clock-o"></i>
+            </li>      
+            <li class="card" type="clock-o">
+                <i class="fa fa-clock-o"></i>
+            </li>         
+            <li class="card" type="check">
+                <i class="fa fa-check"></i>
+            </li>      
+            <li class="card" type="check">
+                <i class="fa fa-check"></i>
+            </li>      
+            <li class="card" type="binoculars">
+                <i class="fa fa-binoculars"></i>
+            </li>      
+            <li class="card" type="binoculars">
+                <i class="fa fa-binoculars"></i>
+            </li>                                                                                            
+            <li class="card" type="bug">
+                <i class="fa fa-bug"></i>
+            </li>      
+            <li class="card" type="bug">
+                <i class="fa fa-bug"></i>
+            </li>       
+            <li class="card" type="glass">
+                <i class="fa fa-glass"></i>
+            </li>      
+            <li class="card" type="glass">
+                <i class="fa fa-glass"></i>
+            </li>     
+            <li class="card" type="bed">
+                <i class="fa fa-bed"></i>
+            </li>      
+            <li class="card" type="bed">
+                <i class="fa fa-bed"></i>
+            </li>  
+            <li class="card" type="cloud">
+                <i class="fa fa-cloud"></i>
+            </li>      
+            <li class="card" type="cloud">
+                <i class="fa fa-cloud"></i>
+            </li>           
+            <li class="card" type="laptop">
+                <i class="fa fa-laptop"></i>
+            </li>      
+            <li class="card" type="laptop">
+                <i class="fa fa-laptop"></i>
+            </li>                                                                                                                                                        
+        </ul>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Congratulations 🎉</h2>
+                <a class="close" href=# >×</a>
+                <div class="content-1">
+                    Congratulations you're a winner 🎉🎉
+                </div>
+                <div class="content-2">
+                    <p>You made <span id=finalMove> </span> moves </p>
+                    <p>in <span id=totalTime> </span> </p>
+                    <p>Rating:  <span id=starRating></span></p>
+                </div>
+                <button id="play-again"onclick="playAgain()">
+                    Play again 😄</a>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
